@@ -18,12 +18,16 @@ public class Circulo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+      try {
+          
         Scanner s=new Scanner(System.in);
         System.out.println("Introduce el radio:");
         double r=s.nextDouble();
         CalculaArea(r);
-        
+      }
+      catch (Exception ex){
+          System.out.println(ex.getMessage());
+      }
     }
     public static void CalculaArea(double r) {
         double area=(PI*r*r);
