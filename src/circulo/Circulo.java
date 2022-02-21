@@ -24,6 +24,7 @@ public class Circulo {
         System.out.println("Introduce el radio:");
         double r=s.nextDouble();
         CalculaArea(r);
+        CalculaLongitud(r);
       }
       catch (Exception ex){
           System.out.println(ex.getMessage());
@@ -33,5 +34,8 @@ public class Circulo {
         double area=(PI*r*r);
 	System.out.printf("El valor del área es %f\n",area);
     }
-   
+    public static void CalculaLongitud(double r) {
+        double longitudCirculo=(2*PI*r);
+        System.out.printf("La longitud del círculo es %f\n",longitudCirculo);
+    }
 }
